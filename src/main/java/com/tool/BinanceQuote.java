@@ -82,7 +82,7 @@ public class BinanceQuote implements Runnable{
             Ticker ticker = marketDataService.getTicker(new CurrencyPair("ETH", "BTC"));
             System.out.println(ticker.toString());
 
-            if(ShareObjectQuote.sender != null)
+            if(ShareObjectQuote.sender != null && ShareObjectQuote.isStart == true)
             {
                 String pair = ""+ ticker.getCurrencyPair().base + ticker.getCurrencyPair().counter + "_T";
 
@@ -110,7 +110,7 @@ public class BinanceQuote implements Runnable{
             try
             {
                 SendQuote();
-                Thread.sleep(10000);
+                Thread.sleep(2000);
             }
             catch (Exception e)
             {

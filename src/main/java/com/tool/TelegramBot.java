@@ -22,16 +22,36 @@ public class TelegramBot extends TelegramLongPollingBot  {
             // Set variables
 
             String message_text = update.getMessage().getText();
-//            if(message_text.equals("/quotes"))
-//            {
-//                sendStopStart(chat_id);
-//            }
-//
-//            if(message_text.equals("/errors"))
-//            {
-//                sendCurrentError(chat_id);
-//            }
-//
+            if(message_text.equals("/start"))
+            {
+               ShareObjectQuote.isStart = true;
+                String msg = "Start push order";
+                SendMessage message_ugrent = new SendMessage() // Create a message object object
+                        .setChatId(chat_id)
+                        .setText(msg);
+                try {
+                    execute(message_ugrent); // Sending our message object to user
+                } catch (TelegramApiException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            if(message_text.equals("/stop"))
+            {
+               ShareObjectQuote.isStart = false;
+
+                String msg = "Stop push order";
+                SendMessage message_ugrent = new SendMessage() // Create a message object object
+                        .setChatId(chat_id)
+                        .setText(msg);
+                try {
+                    execute(message_ugrent); // Sending our message object to user
+                } catch (TelegramApiException e) {
+                    e.printStackTrace();
+                }
+            }
+
 //            if(message_text.equals("/balances"))
 //            {
 //                querryBalance(chat_id);

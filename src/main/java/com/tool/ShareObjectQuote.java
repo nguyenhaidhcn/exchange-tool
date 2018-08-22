@@ -23,6 +23,8 @@ public class ShareObjectQuote {
 
     public static Sender sender;
 
+    public static boolean isStart = true;
+
 
     public static Map<String, Long> notifyMsg = new HashMap<>();
 //    public static String token;
