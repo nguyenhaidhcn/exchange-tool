@@ -49,14 +49,14 @@ public class TelegramBot extends TelegramLongPollingBot  {
     public String getBotUsername() {
         // Return bot username
         // If bot username is @TelegramBot, it must return 'TelegramBot'
-        return "sys_snap_bot";
+        return "mtbit_bot";
     }
 
     @Override
     public String getBotToken() {
         // Return bot token from BotFather
 //        return ShareObjectQuote.token;
-        return "telegram-gateway";
+        return "680035266:AAG-JL0Hfm-s5klJvM6YEFGXoCr2xky4f8s";
 
     }
 

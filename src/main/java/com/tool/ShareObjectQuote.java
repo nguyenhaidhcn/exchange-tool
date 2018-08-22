@@ -1,5 +1,6 @@
 package com.tool;
 
+import com.tool.jms.Sender;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
@@ -20,7 +21,7 @@ public class ShareObjectQuote {
 
     public static TelegramBot telegramBot;
 
-
+    public static Sender sender;
 
 
     public static Map<String, Long> notifyMsg = new HashMap<>();
