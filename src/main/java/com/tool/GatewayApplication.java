@@ -15,8 +15,8 @@ public class GatewayApplication {
 	public static void main(String[] args) {
 
 //		PriceDigit.getInstance().LoadCsv();
-//		ThreadTelegram threadTelegram = new ThreadTelegram();
-//		new Thread(threadTelegram).start();
+		ThreadTelegram threadTelegram = new ThreadTelegram();
+		new Thread(threadTelegram).start();
 
 		BinanceQuote binanceQuote = new BinanceQuote();
 		new Thread(binanceQuote).start();
