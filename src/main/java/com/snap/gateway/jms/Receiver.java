@@ -22,7 +22,7 @@ public class Receiver {
 	@Autowired
 	BalanceRepository balanceRepository;
 
-    @JmsListener(destination = "${OrderResponse.Topic}", containerFactory = "connectionFactory")
+    @JmsListener(destination = "${Start.Topic}", containerFactory = "connectionFactory")
     public void receiveOrders(String request) {
 
     	if(request.contains("The signature is not valid"))

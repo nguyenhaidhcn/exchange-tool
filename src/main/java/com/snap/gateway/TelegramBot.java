@@ -261,7 +261,7 @@ public class TelegramBot extends TelegramLongPollingBot  {
     public String getBotToken() {
         // Return bot token from BotFather
 //        return ShareObjectQuote.token;
-        return "525968331:AAHjiranH89hLS60L02FMW7wOaWB0gVjiIw";
+        return "telegram-gateway";
 
     }
 
