@@ -20,18 +20,8 @@ public class GatewayApplication {
 
 	public static void main(String[] args) {
 
-
-
-//		ShareObjectQuote.token =  token;
-//		ShareObjectQuote.chat_id =  new Long(chat_id);
 		ThreadTelegram threadTelegram = new ThreadTelegram();
 		new Thread(threadTelegram).start();
-
-		ThreadCheckQuoteStop threadCheckQuoteStop = new ThreadCheckQuoteStop();
-		new Thread(threadCheckQuoteStop).start();
-
-
-
 		SpringApplication.run(GatewayApplication.class, args);
 	}
 }
