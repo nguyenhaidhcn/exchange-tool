@@ -1,15 +1,9 @@
-package com.snap.gateway.jms;
+package com.tool.jms;
 
-import com.google.gson.Gson;
-import com.snap.gateway.ShareObjectQuote;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
-
-import java.util.Date;
-import java.util.Map;
 
 @Component
 public class Receiver {

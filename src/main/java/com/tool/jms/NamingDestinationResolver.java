@@ -1,4 +1,4 @@
-package com.snap.gateway.jms;
+package com.tool.jms;
 
 import javax.jms.Destination;
 import javax.jms.JMSException;

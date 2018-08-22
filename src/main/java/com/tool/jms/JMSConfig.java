@@ -1,4 +1,4 @@
-package com.snap.gateway.jms;
+package com.tool.jms;
 
 import javax.jms.ConnectionFactory;
 

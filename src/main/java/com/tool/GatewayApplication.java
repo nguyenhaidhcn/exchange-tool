@@ -1,15 +1,9 @@
-package com.snap.gateway;
+package com.tool;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.telegram.telegrambots.ApiContextInitializer;
-import org.telegram.telegrambots.TelegramBotsApi;
-import org.telegram.telegrambots.exceptions.TelegramApiException;
-
-import java.util.Map;
 
 @SpringBootApplication
 public class GatewayApplication {
@@ -20,6 +14,7 @@ public class GatewayApplication {
 
 	public static void main(String[] args) {
 
+		PriceDigit.getInstance().LoadCsv();
 		ThreadTelegram threadTelegram = new ThreadTelegram();
 		new Thread(threadTelegram).start();
 		SpringApplication.run(GatewayApplication.class, args);

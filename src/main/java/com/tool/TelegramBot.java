@@ -1,4 +1,4 @@
-package com.snap.gateway;
+package com.tool;
 
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
